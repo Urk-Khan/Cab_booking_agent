@@ -29,7 +29,7 @@ export default function Sidebar() {
             <rect x="15.5" y="9" width="3" height="2" fill="#12151C" />
           </svg>
           <span className="font-head font-bold text-[17px] tracking-tight">
-            Ashad
+            Cab/Taxi
           </span>
         </div>
         <p className="text-[11px] text-faint mt-1 font-body">Dispatch console</p>
