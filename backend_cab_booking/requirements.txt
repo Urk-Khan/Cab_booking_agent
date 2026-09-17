@@ -1,0 +1,15 @@
+# Core Pipecat framework, pinned to what this code was verified against.
+# "runner" extra is required for pipecat.runner.run.main() (the built-in dev server).
+# STT + TTS both use Cartesia. LLM can be Anthropic or OpenAI (both cloud, API-key based).
+pipecat-ai[anthropic,openai,cartesia,silero,websocket,runner]==1.8.1
+
+python-dotenv>=1.0.1
+aiohttp>=3.9.0
+loguru>=0.7.2
+
+# Used by start_agent.py (Telnyx webhook update via REST) — not pulled in transitively by
+# anything else here, so without this line a fresh install crashes start_agent.py at import.
+requests>=2.31.0
+
+# Supabase — bookings/customers/vehicles/drivers database (see icabbi_taxi_schema.sql)
+supabase>=2.4.0
